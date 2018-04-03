@@ -11,6 +11,6 @@
 
 代码示例：
 
-[Java版](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/sort/quick_sort/BubbleSortTest.java)
+[Java版](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/sort/bubble_sort/BubbleSortTest.java)
 
 [C语言版](https://github.com/lq920320/Hello-World/blob/master/bubbleSort.cpp)
