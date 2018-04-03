@@ -18,3 +18,9 @@
 1. 反复交替执行步骤②和步骤③，知道指针i和j指向同一个位置(即i=j)时为止，此时i就是标准记录temp最终存放的位置，因此将temp存放到r[i]单元就完成了一次划分过程。
 
 至此，一趟快速排序过程完成，数组被分成r[s..i-1]和r[i+1..t]两个部分。
+
+代码示例：
+
+[Java版](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/sort/quick_sort/QuickSortTest.java)
+
+[C语言版](https://github.com/lq920320/Hello-World/blob/master/quickSort.cpp)
