@@ -36,4 +36,4 @@ kitten和sitting的莱文斯坦距离是3。将kitten变为sitting的最小处�
 
 在解法上也分为动态规划写法和递归写法，C语言写法可参考：https://github.com/youngwind/blog/issues/106 
 
-[Java实现的动态规划的写法]()
+[Java实现的动态规划的写法](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/dynamic_programming/edit_distance/EditDistanceTest.java)
