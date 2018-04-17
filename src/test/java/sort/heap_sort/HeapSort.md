@@ -42,3 +42,7 @@
 - （2）将堆顶元素r[1]与堆中对吼一个的元素r[n]互换，使r[n]成为最大关键字；
 - （3）用筛选函数Shift()将树根结点r[1]继续“筛选”到合适位置，重新构成新堆；
 - （4）重复上述步骤（2）~（3），经过n-1次交换和筛选后，就完成了排序。
+
+代码实现：
+- [C语言版](https://github.com/lq920320/Hello-World/blob/master/heapSort)
+- [Java版](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/sort/heap_sort/HeapSortTest.java)
