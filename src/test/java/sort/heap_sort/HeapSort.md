@@ -44,5 +44,5 @@
 - （4）重复上述步骤（2）~（3），经过n-1次交换和筛选后，就完成了排序。
 
 代码实现：
-- [C语言版](https://github.com/lq920320/Hello-World/blob/master/heapSort)
+- [C语言版](https://github.com/lq920320/Hello-World/blob/master/heapSort.cpp)
 - [Java版](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/sort/heap_sort/HeapSortTest.java)
