@@ -20,14 +20,14 @@ public class BubbleSortTest {
 
   private void bubbleSort(int[] records, int n) {
     int temp;
-    for (int i = 0; i < n-1; i++) {
-     for (int j = i + 1; j < n; j ++){
-       if (records[i] > records[j]){
-         temp = records[i];
-         records[i] = records[j];
-         records[j] = temp;
-       }
-     }
+    for (int i = 0; i < n - 1; i++) {
+      for (int j = i + 1; j < n; j++) {
+        if (records[i] > records[j]) {
+          temp = records[i];
+          records[i] = records[j];
+          records[j] = temp;
+        }
+      }
     }
   }
 
