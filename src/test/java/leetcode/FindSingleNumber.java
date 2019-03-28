@@ -3,6 +3,9 @@ package leetcode;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @author liuqian
  * @date 2019/3/27 21:23.
@@ -32,8 +35,17 @@ public class FindSingleNumber {
     int[] nums2 = {4, 1, 2, 1, 2};
     Assert.assertEquals(1, solution(nums1));
     Assert.assertEquals(4, solution(nums2));
+
+    Assert.assertEquals(1, solution1(nums1));
+    Assert.assertEquals(4, solution1(nums2));
   }
 
+  /**
+   * 与或运算
+   *
+   * @param nums 数组
+   * @return 结果
+   */
   private int solution(int[] nums) {
     int res = 0;
     for (int num : nums) {
@@ -42,8 +54,22 @@ public class FindSingleNumber {
     return res;
   }
 
+  /**
+   * HashMap
+   *
+   * @param nums 数组
+   * @return 结果
+   */
   private int solution1(int[] nums) {
-    return 2;
+    Map<Integer, Integer> map = new HashMap<>();
+    for (int num : nums) {
+      if (map.containsKey(num)) {
+        map.remove(num);
+      } else {
+        map.put(num, 1);
+      }
+    }
+    return map.entrySet().iterator().next().getKey();
   }
 
 
