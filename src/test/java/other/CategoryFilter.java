@@ -55,23 +55,23 @@ public class CategoryFilter {
   }
   
   private List<DealCategory> getFullChain(Integer childId) {
-        List<DealCategory> dealCategories = getAllWithoutDeleted();
-        List<DealCategory> categoryChain = new ArrayList<>();
-        DealCategory dealCategory = dealCategories.stream().filter(category -> childId.equals(category.getId())).findFirst().orElse(null);
-        if (dealCategory != null) {
-            categoryChain.add(dealCategory);
-            Integer parentId = dealCategory.getParentId();
-            while (parentId != 0) {
-                Integer finalParentId = parentId;
-                DealCategory parentCategory = dealCategories.stream().filter(category -> finalParentId.equals(category.getId())).findFirst().orElse(null);
-                if (parentCategory != null) {
-                    parentId = parentCategory.getParentId();
-                    categoryChain.add(parentCategory);
-                }
+    List<DealCategory> dealCategories = getAllWithoutDeleted();
+    List<DealCategory> categoryChain = new ArrayList<>();
+    DealCategory dealCategory = dealCategories.stream().filter(category -> childId.equals(category.getId())).findFirst().orElse(null);
+    if (dealCategory != null) {
+        categoryChain.add(dealCategory);
+        Integer parentId = dealCategory.getParentId();
+        while (parentId != 0) {
+            Integer finalParentId = parentId;
+            DealCategory parentCategory = dealCategories.stream().filter(category -> finalParentId.equals(category.getId())).findFirst().orElse(null);
+            if (parentCategory != null) {
+                parentId = parentCategory.getParentId();
+                categoryChain.add(parentCategory);
             }
         }
-        return categoryChain;
     }
+    return categoryChain;
+}
 
   @Data
   private class DealCategory {
