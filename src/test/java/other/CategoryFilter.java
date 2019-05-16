@@ -21,7 +21,7 @@ public class CategoryFilter {
     ObjectMapper objectMapper = new ObjectMapper();
     System.out.println(objectMapper.writeValueAsString(getCategories()));
     // [{"id":1,"parentId":0,"children":[{"id":6,"parentId":1,"children":[{"id":13,"parentId":6,"children":null},{"id":13,"parentId":6,"children":null}]},{"id":7,"parentId":1,"children":null}]},{"id":2,"parentId":0,"children":null},{"id":3,"parentId":0,"children":[{"id":8,"parentId":3,"children":null}]},{"id":4,"parentId":0,"children":[{"id":9,"parentId":4,"children":null},{"id":10,"parentId":4,"children":null},{"id":12,"parentId":4,"children":null}]},{"id":5,"parentId":0,"children":[{"id":11,"parentId":5,"children":null}]}]
-    
+
     List<DealCategory> categoryChain = getFullChain(13);
     System.out.println(objectMapper.writeValueAsString(categoryChain));
     // [{"id":13,"parentId":6,"children":null},{"id":6,"parentId":1,"children":null},{"id":1,"parentId":0,"children":null}]
@@ -53,25 +53,25 @@ public class CategoryFilter {
       children.forEach(child -> buildSubs(child, subs));//  再次递归构建
     }
   }
-  
+
   private List<DealCategory> getFullChain(Integer childId) {
     List<DealCategory> dealCategories = getAllWithoutDeleted();
     List<DealCategory> categoryChain = new ArrayList<>();
     DealCategory dealCategory = dealCategories.stream().filter(category -> childId.equals(category.getId())).findFirst().orElse(null);
     if (dealCategory != null) {
-        categoryChain.add(dealCategory);
-        Integer parentId = dealCategory.getParentId();
-        while (parentId != 0) {
-            Integer finalParentId = parentId;
-            DealCategory parentCategory = dealCategories.stream().filter(category -> finalParentId.equals(category.getId())).findFirst().orElse(null);
-            if (parentCategory != null) {
-                parentId = parentCategory.getParentId();
-                categoryChain.add(parentCategory);
-            }
+      categoryChain.add(dealCategory);
+      Integer parentId = dealCategory.getParentId();
+      while (parentId != 0) {
+        Integer finalParentId = parentId;
+        DealCategory parentCategory = dealCategories.stream().filter(category -> finalParentId.equals(category.getId())).findFirst().orElse(null);
+        if (parentCategory != null) {
+          parentId = parentCategory.getParentId();
+          categoryChain.add(parentCategory);
         }
+      }
     }
     return categoryChain;
-}
+  }
 
   @Data
   private class DealCategory {
