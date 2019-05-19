@@ -42,7 +42,7 @@ public class FindSingleNumber {
   }
 
   /**
-   * 与或运算
+   * 异或运算
    *
    * @param nums 数组
    * @return 结果
@@ -75,7 +75,7 @@ public class FindSingleNumber {
 
 
   /**
-   * Java 中的与运算、或运算、与或运算
+   * Java 中的与运算、或运算、异或运算
    * <p>
    * 都是先将数字转为二进制数，再进行运算
    */

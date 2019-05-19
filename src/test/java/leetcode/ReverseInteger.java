@@ -31,10 +31,10 @@ public class ReverseInteger {
    */
   @Test
   public void reverseIntegerTest() {
-    System.out.println(String.valueOf(reverse(123)));
-    System.out.println(String.valueOf(reverse(-123)));
-    System.out.println(String.valueOf(reverse(120)));
-    System.out.println(String.valueOf(reverse(Integer.MAX_VALUE)));
+    System.out.println(reverse(123));
+    System.out.println(reverse(-123));
+    System.out.println(reverse(120));
+    System.out.println(reverse(Integer.MAX_VALUE));
   }
 
   public int reverse(int x) {

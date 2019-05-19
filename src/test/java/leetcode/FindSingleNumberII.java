@@ -35,6 +35,8 @@ public class FindSingleNumberII {
     int[] nums2 = {0, 1, 0, 1, 0, 1, 99};
     System.out.println(singleNumber(nums1));
     System.out.println(singleNumber(nums2));
+    System.out.println(singleNumber2(nums1));
+    System.out.println(singleNumber2(nums2));
   }
 
   /**
@@ -58,5 +60,29 @@ public class FindSingleNumberII {
       }
     }
     return 0;
+  }
+
+  /**
+   * 用 one 记录到当前处理的元素为止，二进制1出现“1次”（mod 3 之后的 1）的有哪些二进制位； 用 two 记录到当前计算的变量为止，二进制1出现“2次”（mod 3 之后的 2）的有哪些二进制位。 当 one 和 two 中的某一位同时为1时表示该二进制位上1出现了3次，此时需要清零。即用二进制模拟三 进制运算。最终 one 记录的是最终结果。
+   * <p>
+   * 这里使用了异或、与、取反这些运算
+   * 详细解析见：
+   * 1. http://liadbiz.github.io/leetcode-single-number-problems-summary/
+   * 2. https://leetcode.com/problems/single-number-ii/discuss/43295/detailed-explanation-and-generalization-of-the-bitwise-operation-method-for-single-numbers
+   *
+   * @param nums 数组
+   * @return 出现一次的数字
+   */
+  public int singleNumber2(int[] nums) {
+    int one = 0, two = 0;
+    int mask;
+    for (int num : nums) {
+      two ^= one & num;
+      one ^= num;
+      mask = ~(one & two);
+      one &= mask;
+      two &= mask;
+    }
+    return one;
   }
 }
