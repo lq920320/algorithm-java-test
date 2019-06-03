@@ -47,6 +47,6 @@ public class HashSetTest {
     result.clear();
     result.addAll(set1);
     result.addAll(set2);
-    System.out.println("set1 与 set2 的差集为：" + result);
+    System.out.println("set1 与 set2 的并集为：" + result);
   }
 }
