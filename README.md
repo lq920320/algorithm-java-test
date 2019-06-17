@@ -11,3 +11,4 @@
 - [斐波那契数列Java实现](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/numbers/fibonacci/FibonacciTest.java)
 - [动态规划之--编辑距离](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/dynamic_programming/edit_distance/EditDistance.md)
 - [数字转换，对于不同进制数值的转换](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/conversions/AnyBaseToDecimal.java)
+- [在Java中如何使用Set求交集、差集、并集](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/other/HashSetTest.java)
