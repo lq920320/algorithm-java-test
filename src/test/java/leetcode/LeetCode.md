@@ -12,8 +12,10 @@
 1. [只出现一次的数字](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/FindSingleNumber.java)
 1. [只出现一次的数字 II](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/FindSingleNumberII.java)
 1. [只出现一次的数字 III](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/FindSingleNumberIII.java)
-1. [有效的括号](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/ValidBrackets.java)
-1. [翻转二叉树](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/InvertBinaryTree.java)
+1. [#20 有效的括号](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/ValidBrackets.java)
+1. [#226 翻转二叉树](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/InvertBinaryTree.java)
+1. [#150 逆波兰表达式求值](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/EvalRpn.java)
+1. [#224 基本计算器](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/BasicCalculator.java)
 
 
 ### TODO
