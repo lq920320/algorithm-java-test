@@ -51,17 +51,17 @@ public class BasicCalculator {
         Assert.assertEquals(3, calculate2(" 2-1 + 2 "));
         Assert.assertEquals(23, calculate2(expression));
         Assert.assertEquals(62, calculate2(expression1));
-//        Assert.assertEquals(2, calculate3("1 + 1"));
-//        Assert.assertEquals(3, calculate3(" 2-1 + 2 "));
-//        Assert.assertEquals(23, calculate3(expression));
-//        Assert.assertEquals(62, calculate3(expression));
+        Assert.assertEquals(2, calculate3("1 + 1"));
+        Assert.assertEquals(3, calculate3(" 2-1 + 2 "));
+        Assert.assertEquals(23, calculate3(expression));
+        Assert.assertEquals(62, calculate3(expression1));
     }
 
     @Test
     public void charTest() {
         char ch = '3';
         System.out.println(ch - '0');
-        String infixExpression = "8-7+((5+5)-8)-2+7";
+        String infixExpression = "18-7+((5+5)-8)-2+7";
         String postfixExpression = infixToPostfix(infixExpression);
         System.out.println(postfixExpression);
         System.out.println(rpnCalculate(postfixExpression));
@@ -172,66 +172,78 @@ public class BasicCalculator {
 
 
     public int calculate3(String expression) {
+        System.out.println("原始表达式：" + expression);
         // 中缀转后缀
         String rpnExpression = infixToPostfix(expression);
+        System.out.println("后缀表达式：" + rpnExpression);
         // 计算后缀
         return rpnCalculate(rpnExpression);
     }
 
-    private String infixToPostfix(String s) {
+    private String infixToPostfix(String infix) {
+        // 清除空格
+        infix = infix.replaceAll("\\s", "");
         // 最终结果
         StringBuilder rpnExpression = new StringBuilder();
         // 运算符栈
         Stack<Character> operatorStack = new Stack<>();
         // 操作数
-        int operand = 0;
-        int length = s.length();
-        for (int i = 0; i < length; i++) {
-            char ch = s.charAt(i);
-            if (Character.isDigit(ch)) {
-                // 形成操作数，因为它可能超过一位数
-                operand = 10 * operand + (ch - '0');
-            } else if (ch == '+') {
-                // 将操作数作为输出
-                rpnExpression.append(operand).append(" ");
-                if (!operatorStack.isEmpty() && operatorStack.peek() != '(') {
-                    // 将操作符栈中的栈顶元素输出
+        int length = infix.length();
+        int i = 0;
+        char token;
+        int priority;
+        while (i < length) {
+            token = infix.charAt(i);
+            priority = priority(token);
+            if (priority == 0 && token != '(' && token != ')') {
+                rpnExpression.append(token);          // Puts token in postfix String
+
+                // Keeps 2 or more digit numbers together
+                if ((i + 1) < length && priority(infix.charAt(i + 1)) != 0) {
+                    rpnExpression.append(" ");
+                }
+            } else if (token == '(') {
+                operatorStack.push(token);
+            } else if (token == ')') {
+                // 避免出现多个空格
+                if (!rpnExpression.toString().endsWith(" ")) {
+                    rpnExpression.append(" ");          // put a space in postfix String
+                }
+
+                while (operatorStack.peek() != '(') {      // possible error
+                    rpnExpression.append(operatorStack.pop()).append(" ");  // put operator from stack in postfix String and leave a space
+                }
+                operatorStack.pop();                // Eliminates '(' from the stack
+            } else if (priority(token) > 0) {
+                // compares operator from the stack in next operator from infix string,
+                // the operator with the highest precedences goes in the postfix string
+                while (!operatorStack.isEmpty() && operatorStack.peek() != '(' && priority(token) <= priority(operatorStack.peek())) {
                     rpnExpression.append(operatorStack.pop()).append(" ");
                 }
-                operatorStack.push(ch);
-                // 重置操作数
-                operand = 0;
-            } else if (ch == '-') {
-                rpnExpression.append(operand).append(" ");
-                if (!operatorStack.isEmpty() && operatorStack.peek() != '(') {
-                    rpnExpression.append(operatorStack.pop()).append(" ");
-                }
-                operatorStack.push(ch);
-                operand = 0;
-            } else if (ch == '(') {
-                rpnExpression.append(operand).append(" ");
-                operatorStack.push(ch);
-                operand = 0;
-            } else if (ch == ')') {
-                while (operatorStack.peek() != '(') {
-                    rpnExpression.append(operatorStack.pop()).append(" ");
-                }
-                if (operatorStack.peek() == '(') {
-                    operatorStack.pop();
-                }
-                rpnExpression.append(operand).append(" ");
-                operand = 0;
+                operatorStack.push(token);  // first operator to go in the stack
             }
+            i++;
         }
+
+        rpnExpression.append(" ");    // puts a space in the postfix string
+
+        // put the rest of the operators in the stack in the postfix string
+        while (!operatorStack.isEmpty()) {
+            rpnExpression.append(operatorStack.pop()).append(" ");
+        }
+
         return rpnExpression.toString();
     }
 
     private int rpnCalculate(String rpnExpression) {
         // rpnExpression 是以空格为分隔符的 rpn 表达式
+        // 避免出现两个空格的情况（hard code 解决）
+        rpnExpression = rpnExpression.replace("  ", " ");
         String[] tokens = rpnExpression.split(" ");
         Stack<Integer> stack = new Stack<>();
         int result;
         for (String t : tokens) {
+            t = t.trim();
             switch (t) {
                 case "+":
                     result = stack.pop() + stack.pop();
@@ -251,12 +263,33 @@ public class BasicCalculator {
                     break;
                 default:
                     result = Integer.parseInt(t);
-                    break;
             }
             // 将计算结果或者元素本身推入栈中
             stack.push(result);
         }
         return stack.pop();
+    }
+
+    /**
+     * 获取运算符的优先级
+     *
+     * @param character
+     * @return
+     */
+    private int priority(Character character) {
+        switch (character) {
+            case '+':
+            case '-':
+                return 1;
+            case '*':
+            case '/':
+                return 2;
+            case '(':
+            case ')':
+                return 3;
+            default:
+                return 0;
+        }
     }
 
 }
