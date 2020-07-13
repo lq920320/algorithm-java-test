@@ -16,6 +16,8 @@
 1. [#226 翻转二叉树](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/InvertBinaryTree.java)
 1. [#150 逆波兰表达式求值](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/EvalRpn.java)
 1. [#224 基本计算器](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/BasicCalculator.java)
+1. [#69 x 的平方根](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/SqrtTest.java)
+1. [#26 删除排序数组中的重复项](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/RemoveDuplicatesInArray.java)
 
 
 ### TODO
