@@ -19,6 +19,7 @@
 1. [#69 x 的平方根](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/SqrtTest.java)
 1. [#26 删除排序数组中的重复项](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/RemoveDuplicatesInArray.java)
 1. [#217 存在重复元素](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/ContainsDuplicate.java)
+1. [#12 整数转罗马数字](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/IntToRoman.java)
 
 
 ### TODO
