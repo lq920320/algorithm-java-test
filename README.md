@@ -4,7 +4,9 @@
 
 - [经典排序算法](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/sort/sort.md)
 
-- [`leetcode`题解](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/LeetCode.md)
+- [`leetcode`力扣题解](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/LeetCode.md)
+
+- [`lintcode`领扣题解](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/lintcode/LintCodeSolution.md)
 
 ### 其他
 
