@@ -34,10 +34,12 @@ public class StringCompress {
         String a = "aabcccccaaa";
         System.out.println("before compress: " + a);
         System.out.println("after compressed: " + solution1(a));
+        System.out.println("after compressed: " + solution2(a));
 
         String b = "aabbcc";
         System.out.println("before compress: " + b);
         System.out.println("after compressed: " + solution1(b));
+        System.out.println("after compressed: " + solution2(b));
 
     }
 
@@ -87,6 +89,24 @@ public class StringCompress {
      * @return
      */
     public String solution2(String str) {
-        return "";
+        if (str == null || str.length() <= 2) {
+            return str;
+        }
+        StringBuilder result = new StringBuilder();
+        int start = 0;
+        int end = 1;
+        int len = str.length();
+        while (end < len) {
+            while (end < len && str.charAt(end) == str.charAt(end - 1)) {
+                end++;
+            }
+            result.append(str.charAt(start)).append((end - start));
+            start = end;
+            end++;
+        }
+
+        String res = result.toString();
+
+        return res.length() < len ? res : str;
     }
 }
