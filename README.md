@@ -16,3 +16,4 @@
 - [在Java中如何使用Set求交集、差集、并集](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/other/HashSetTest.java)
 - [有限整数转为中国小写的优化写法](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/other/IntNumber2ChineseTest.java)
 - [Java8中使用 `sort()` 函数进行多属性排序](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/other/MultiSortedTest.java)
+- [使用位运算实现简单的四则运算（Java版）](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/other/calculator/Calculator.java)
