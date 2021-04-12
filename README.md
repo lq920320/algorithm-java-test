@@ -1,5 +1,7 @@
 ## 算法Java实现
 
+[![codebeat badge](https://codebeat.co/badges/16719692-61b0-4b33-8a87-5cb0aead8606)](https://codebeat.co/projects/github-com-lq920320-algorithm-java-test-master)
+
 ### 算法
 
 - [经典排序算法](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/sort/sort.md)
