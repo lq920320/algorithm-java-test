@@ -24,13 +24,13 @@ public class FindRepeatedTest {
     @Test
     public void findRepeatedTest() {
         List<User> users = new ArrayList<>();
-        users.add(new User("xpf1", "1238", 18));
-        users.add(new User("xpf2", "1234", 18));
-        users.add(new User("xpf3", "1235", 18));
-        users.add(new User("xpf", "1236", 18));
-        users.add(new User("xpf", "1237", 18));
-        users.add(new User("xpf", "1237", 18));
-        users.add(new User("xpf1", "1239", 18));
+        for (int i = 0; i < 7; i++) {
+            User user = new User();
+            user.setUserName("xpf" + (i % 3));
+            user.setUserNo("123" + (i % 3));
+            user.setAge(18);
+            users.add(user);
+        }
         Map<String, Long> collect = users.stream()
           .map(User::getUserName)
           .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
@@ -48,7 +48,7 @@ public class FindRepeatedTest {
     @Data
     @NoArgsConstructor
     @AllArgsConstructor
-    private class User {
+    private static class User {
         private String userName;
         private String userNo;
         private Integer age;
