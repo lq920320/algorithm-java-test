@@ -20,6 +20,8 @@
 1. [#26 删除排序数组中的重复项](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/RemoveDuplicatesInArray.java)
 1. [#217 存在重复元素](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/ContainsDuplicate.java)
 1. [#12 整数转罗马数字](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/IntToRoman.java)
+1. [#27 移除元素](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/RemoveElement.java)
+1. [41. 缺失的第一个正数](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/FirstMissingPositive.java)
 
 
 ### TODO
