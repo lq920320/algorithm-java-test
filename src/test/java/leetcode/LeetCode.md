@@ -1,7 +1,6 @@
-
 ## `LeetCode` 题解
 
-### solution 
+### solution
 
 1. [两数之和](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/TwoNumberSum.java)
 1. [三数之和](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/ThreeNumberSum.java)
@@ -23,7 +22,7 @@
 1. [#27 移除元素](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/RemoveElement.java)
 1. [#41. 缺失的第一个正数](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/FirstMissingPositive.java)
 1. [#485. 最大连续 1 的个数](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/MaxConsecutiveOnes.java)
-
+1. [# 1052. 爱生气的书店老板](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/GrumpyBookstoreOwner.java)
 
 ### TODO
 
