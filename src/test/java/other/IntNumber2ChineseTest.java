@@ -8,8 +8,8 @@ import org.junit.Test;
  */
 public class IntNumber2ChineseTest {
 
-    private static String[] units = {"", "十", "百", "千", "万", "十万", "百万", "千万", "亿", "十亿", "百亿", "千亿", "万亿"};
-    private static char[] numArray = {'零', '一', '二', '三', '四', '五', '六', '七', '八', '九'};
+    private static final String[] units = {"", "十", "百", "千", "万", "十万", "百万", "千万", "亿", "十亿", "百亿", "千亿", "万亿"};
+    private static final char[] numArray = {'零', '一', '二', '三', '四', '五', '六', '七', '八', '九'};
 
     @Test
     public void numberTest() {

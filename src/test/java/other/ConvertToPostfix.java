@@ -4,12 +4,12 @@ import java.util.Stack;
 
 public class ConvertToPostfix {
 
-    private String infix;    // Holds the infix expression
-    private StringBuffer postfix = new StringBuffer("");  // Where the postfix expression will be stored
+    private final String infix;    // Holds the infix expression
+    private final StringBuffer postfix = new StringBuffer("");  // Where the postfix expression will be stored
     private char token;      // Holds the char that will be the operand or operator
     private int type;      // determines the oder of operations
     private int count = 0;    //counts the length of string
-    private Stack<Character> stk = new Stack<>();  //Stack that will hold the operators
+    private final Stack<Character> stk = new Stack<>();  //Stack that will hold the operators
 
     public ConvertToPostfix(String infix) {
         this.infix = infix.replaceAll("\\s", "");    // Eliminates the spaces in the string
@@ -32,14 +32,14 @@ public class ConvertToPostfix {
             } else if (token == ')') {
                 postfix.append(" ");          // put a space in postfix String
                 while (stk.peek() != '(') {      // possible error
-                    postfix.append(stk.pop() + " ");  // put operator from stack in postfix String and leave a space
+                    postfix.append(stk.pop()).append(" ");  // put operator from stack in postfix String and leave a space
                 }
                 stk.pop();                // Eliminates '(' from the stack
             } else if (precedence(token) > 0) {
                 // compares operator from the stack in next operator from infix string,
                 // the operator with the highest precedences goes in the postfix string
                 while (!stk.isEmpty() && stk.peek() != '(' && precedence(token) <= precedence(stk.peek())) {
-                    postfix.append(stk.pop() + " ");
+                    postfix.append(stk.pop()).append(" ");
                 }
                 stk.push(token);  // first operator to go in the stack
             }
@@ -50,7 +50,7 @@ public class ConvertToPostfix {
 
         // put the rest of the operators in the stack in the postfix string
         while (!stk.isEmpty()) {
-            postfix.append(stk.pop() + " ");
+            postfix.append(stk.pop()).append(" ");
         }
 
         return postfix;    // return the final postfix expression
@@ -72,4 +72,5 @@ public class ConvertToPostfix {
                 return 0;
         }
     }
-} // of class
+}
+// end of class

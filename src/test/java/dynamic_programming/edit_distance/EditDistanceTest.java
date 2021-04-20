@@ -38,11 +38,10 @@ public class EditDistanceTest {
     int lengthB = strB.length();
     int length = Math.max(lengthA, lengthB);
     /*申请一个二维数组，存储转移矩阵*/
-    int array[][] = new int[length + 1][length + 1];
+    int[][] array = new int[length + 1][length + 1];
     /*边界条件初始化*/
     for (int i = 0; i <= length; i++) {
       array[i][0] = i;
-
     }
     /*边界条件初始化*/
     for (int j = 0; j <= length; j++) {

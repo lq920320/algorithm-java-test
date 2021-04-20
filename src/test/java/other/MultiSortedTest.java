@@ -22,10 +22,14 @@ public class MultiSortedTest {
     @Test
     public void multiSortedTest() throws JsonProcessingException {
         // 根据年纪升序，根据薪水降序，得到一个有序的列表
+        // 排序条件逆序设置：先排序的条件放在后面，后排序的条件放前面
         ObjectMapper objectMapper = new ObjectMapper();
         List<Worker> testWorkers = getTestDatas();
         System.out.println(objectMapper.writeValueAsString(testWorkers));
-        List<Worker> sortedWorkers = testWorkers.stream().sorted(Comparator.comparing(Worker::getSalary, Comparator.reverseOrder())).sorted(Comparator.comparing(Worker::getAge)).collect(Collectors.toList());
+        List<Worker> sortedWorkers = testWorkers.stream()
+                .sorted(Comparator.comparing(Worker::getSalary, Comparator.reverseOrder()))
+                .sorted(Comparator.comparing(Worker::getAge))
+                .collect(Collectors.toList());
         System.out.println(objectMapper.writeValueAsString(sortedWorkers));
     }
 
