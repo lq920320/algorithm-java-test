@@ -23,6 +23,7 @@
 1. [#41. 缺失的第一个正数](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/FirstMissingPositive.java)
 1. [#485. 最大连续 1 的个数](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/MaxConsecutiveOnes.java)
 1. [# 1052. 爱生气的书店老板](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/GrumpyBookstoreOwner.java)
+1. [剑指 Offer 03. 数组中重复的数字](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/RepeatedNumberInArray.java)
 
 ### TODO
 
