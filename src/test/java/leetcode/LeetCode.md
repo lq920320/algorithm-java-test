@@ -24,6 +24,8 @@
 1. [#485. 最大连续 1 的个数](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/MaxConsecutiveOnes.java)
 1. [# 1052. 爱生气的书店老板](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/GrumpyBookstoreOwner.java)
 1. [剑指 Offer 03. 数组中重复的数字](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/RepeatedNumberInArray.java)
+1. [# 219. 存在重复元素 II](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/ContainDuplicateII.java)
+1. [# 560. 和为K的子数组](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/SubarraySumEqualsK.java)
 
 ### TODO
 
