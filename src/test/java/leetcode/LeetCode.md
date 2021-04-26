@@ -27,6 +27,7 @@
 1. [# 219. 存在重复元素 II](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/ContainDuplicateII.java)
 1. [# 560. 和为K的子数组](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/SubarraySumEqualsK.java)
 1. [# 66. 加一](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/PlusOne.java)
+1. [# 75. 颜色分类](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/SortColors.java)
 
 ### TODO
 
