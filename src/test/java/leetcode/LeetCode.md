@@ -29,6 +29,7 @@
 1. [# 66. 加一](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/PlusOne.java)
 1. [# 75. 颜色分类](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/SortColors.java)
 1. [# 54. 螺旋矩阵](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/SpiralMatrix.java)
+1. [# 54. 螺旋矩阵II](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/SpiralMatrixII.java)
 
 ### TODO
 
