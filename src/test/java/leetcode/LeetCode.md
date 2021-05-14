@@ -2,8 +2,8 @@
 
 ### solution
 
-1. [两数之和](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/TwoNumberSum.java)
-1. [三数之和](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/ThreeNumberSum.java)
+1. [#1.两数之和](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/TwoNumberSum.java)
+1. [#15.三数之和](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/ThreeNumberSum.java)
 1. [两数相除](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/TwoNumberDivide.java)
 1. [罗马数字转整数](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/RomanToIntTest.java)
 1. [最长公共前缀](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/LongestCommonPrefix.java)
@@ -30,6 +30,8 @@
 1. [# 75. 颜色分类](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/SortColors.java)
 1. [# 54. 螺旋矩阵](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/SpiralMatrix.java)
 1. [# 54. 螺旋矩阵II](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/SpiralMatrixII.java)
+1. [#233. 数字 1 的个数](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/NumberOfDigitOne.java)
+1. [#18.四数之和](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/FourSum.java)
 
 ### TODO
 
