@@ -55,7 +55,7 @@ public class TwoNumberDivide {
     if (lans > Integer.MAX_VALUE) {
       ans = (sign == 1) ? Integer.MAX_VALUE : Integer.MIN_VALUE;
     } else {
-      ans = (int) (sign > 0 ? lans : 0 - lans);
+      ans = (int) (sign > 0 ? lans : -lans);
     }
     return ans;
   }
