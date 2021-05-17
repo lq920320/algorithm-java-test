@@ -32,6 +32,8 @@
 1. [# 54. 螺旋矩阵II](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/SpiralMatrixII.java)
 1. [#233. 数字 1 的个数](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/NumberOfDigitOne.java)
 1. [#18.四数之和](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/FourSum.java)
+1. [#876. 链表的中间结点](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/MiddleLinkedList.java)
+1. [#剑指 Offer 52. 两个链表的第一个公共节点](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/CommonNodeOfTwoLinkedList.java)
 
 ### TODO
 

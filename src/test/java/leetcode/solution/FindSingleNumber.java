@@ -44,6 +44,12 @@ public class FindSingleNumber {
 
         Assert.assertEquals(1, solution3(nums1));
         Assert.assertEquals(4, solution3(nums2));
+
+        Assert.assertEquals(1, solution4(nums1));
+        Assert.assertEquals(4, solution4(nums2));
+
+        Assert.assertEquals(1, solution5(nums1));
+        Assert.assertEquals(4, solution5(nums2));
     }
 
     /**
@@ -126,6 +132,64 @@ public class FindSingleNumber {
             set.add(num);
         }
         return set.iterator().next();
+    }
+
+
+    /**
+     * 栈
+     * 解析
+     * 该方法也很容易想到，我们首先将其排序，然后遍历数组，如果栈为空则将当前元素压入栈，如果栈不为空，若当前元素和栈顶元素相同则出栈，继续遍历下一元素，如果当前元素和栈顶元素不同的话，则说明栈顶元素是只出现一次的元素，我们将其返回即可。
+     *
+     * @param nums
+     * @return result
+     */
+    public int solution4(int[] nums) {
+        if (nums.length == 1) {
+            return nums[0];
+        }
+        Arrays.sort(nums);
+        Stack<Integer> stack = new Stack<>();
+        for (int x : nums) {
+            if (stack.isEmpty()) {
+                stack.push(x);
+                continue;
+            }
+            // 不同时直接跳出
+            if (stack.peek() != x) {
+                break;
+            }
+            // 相同时出栈
+            stack.pop();
+        }
+        return stack.peek();
+    }
+
+    /**
+     * 求和法
+     * 解析
+     * 这个方法也比较简单，也是借助咱们的 HashSet ，具体思路如下，我们通过 HashSet 保存数组内的元素，然后进行求和（setsum），那么得到的这个和则为去除掉重复元素的和，我们也可以得到所有元素和（numsum）。因为我们其他元素都出现两次，仅有一个元素出现一次，那我们通过 setsum * 2 - numsum 得到的元素则为出现一次的数。
+     *
+     * @param nums
+     * @return result
+     */
+    public int solution5(int[] nums) {
+        if (nums.length == 1) {
+            return nums[0];
+        }
+        HashSet<Integer> set = new HashSet<>();
+        int setsum = 0;
+        int numsum = 0;
+        for (int x : nums) {
+            // 所有元素的和
+            numsum += x;
+            if (!set.contains(x)) {
+                // HashSet内元素的和
+                setsum += x;
+            }
+            set.add(x);
+        }
+        // 返回值
+        return setsum * 2 - numsum;
     }
 
 
