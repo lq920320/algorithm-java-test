@@ -36,6 +36,9 @@
 1. [#剑指 Offer 52. 两个链表的第一个公共节点](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/CommonNodeOfTwoLinkedList.java)
 1. [#35. 搜索插入的位置](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/SearchInsert.java)
 1. [#209. 长度最小的子数组](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/MinimumSizeSubarraySum.java)
+1. [#141. 环形链表](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/LinkedListCycle.java)
+1. [#160. 相交链表](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/IntersectionOfTwoLinkedLists.java)
+1. [#328. 奇偶链表](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/OddEvenLinkedList.java)
 
 ### TODO
 
