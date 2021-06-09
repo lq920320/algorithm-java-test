@@ -3,8 +3,8 @@ package leetcode.solution;
 import org.junit.Test;
 
 /**
- * 209. 长度最小的子数组
- * # 难度：中等
+ * #209. 长度最小的子数组
+ * 难度：中等
  *
  * @author zetu
  * @date 2021/6/6

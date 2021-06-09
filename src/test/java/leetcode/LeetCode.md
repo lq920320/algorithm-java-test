@@ -39,6 +39,7 @@
 1. [#141. 环形链表](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/LinkedListCycle.java)
 1. [#160. 相交链表](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/IntersectionOfTwoLinkedLists.java)
 1. [#328. 奇偶链表](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/OddEvenLinkedList.java)
+1. [#881. 救生艇](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/BoatsToSavePeople.java)
 
 ### TODO
 

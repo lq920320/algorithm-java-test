@@ -3,6 +3,9 @@ package leetcode.solution;
 import org.junit.Test;
 
 /**
+ * #26. 删除排序数组中的重复项
+ * 难度：简单
+ *
  * @author liuqian
  * @date 2020/7/13 22:10.
  */
@@ -50,7 +53,6 @@ public class RemoveDuplicatesInArray {
      * <p>
      * 来源：力扣（LeetCode）
      * 链接：https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array
-     * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
      */
     @Test
     public void solutionTest() {
