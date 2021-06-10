@@ -40,6 +40,10 @@
 1. [#160. 相交链表](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/IntersectionOfTwoLinkedLists.java)
 1. [#328. 奇偶链表](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/OddEvenLinkedList.java)
 1. [#881. 救生艇](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/BoatsToSavePeople.java)
+1. [#剑指 Offer 09. 用两个栈实现队列](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/ImplementQueueUsingStacks.java)
+1. [#225. 用队列实现栈](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/ImplementStackUsingQueues.java)
+1. [#1047. 删除字符串中的所有相邻重复项](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/RemoveAllAdjacentDuplicatesInString.java)
+1. [#402. 移掉K位数字](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/RemoveKDigits.java)
 
 ### TODO
 
