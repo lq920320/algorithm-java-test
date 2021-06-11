@@ -44,6 +44,12 @@
 1. [#225. 用队列实现栈](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/ImplementStackUsingQueues.java)
 1. [#1047. 删除字符串中的所有相邻重复项](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/RemoveAllAdjacentDuplicatesInString.java)
 1. [#402. 移掉K位数字](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/RemoveKDigits.java)
+1. [#34. 在排序数组中查找元素的第一个和最后一个位置](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/FindFirstLastPositionOfElementInSortedArray.java)
+1. [找出第一个大于目标元素的索引/找出最后一个小于目标元素的索引](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/BoundNum.java)
+1. [#33. 搜索旋转排序数组](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/SearchInRotatedSortedArray.java)
+1. [#81. 搜索旋转排序数组II](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/SearchInRotatedSortedArrayII.java)
+1. [#153. 寻找旋转排序数组中的最小值](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/FindMinimumInRotatedSortedArray.java)
+1. [#74. 搜索二维矩阵](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/Search2dMatrix.java)
 
 ### TODO
 
