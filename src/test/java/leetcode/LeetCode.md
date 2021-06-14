@@ -50,6 +50,12 @@
 1. [#81. 搜索旋转排序数组II](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/SearchInRotatedSortedArrayII.java)
 1. [#153. 寻找旋转排序数组中的最小值](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/FindMinimumInRotatedSortedArray.java)
 1. [#74. 搜索二维矩阵](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/Search2dMatrix.java)
+1. [#剑指 Offer 59 - II. 队列的最大值](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/MaxValueInQueue.java)
+1. [#剑指 Offer 59 - I. 滑动窗口的最大值](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/MaxSlidingWindow.java)
+1. [#1438. 绝对差不超过限制的最长连续子数组](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/MaxSlidingWindow.java)
+1. [#155. 最小栈](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/MinStack.java)
+1. [#739. 每日温度](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/DailyTemperatures.java)
+1. [#42. 接雨水](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/TrappingRainWater.java)
 
 ### TODO
 
