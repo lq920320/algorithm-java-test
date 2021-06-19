@@ -56,6 +56,10 @@
 1. [#155. 最小栈](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/MinStack.java)
 1. [#739. 每日温度](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/DailyTemperatures.java)
 1. [#42. 接雨水](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/TrappingRainWater.java)
+1. [#724. 寻找数组的中心下标](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/FindPivotIndex.java)
+1. [#523. 连续的子数组和](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/ContinuousSubarraySum.java)
+1. [#1248. 统计「优美子数组」](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/CountNumberOfNiceSubarrays.java)
+1. [#974. 和可被 K 整除的子数组](https://github.com/lq920320/algorithm-java-test/blob/master/src/test/java/leetcode/solution/SubarraysDivByK.java)
 
 ### TODO
 
