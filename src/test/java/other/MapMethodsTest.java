@@ -5,10 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.Data;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @author liuqian
@@ -36,9 +33,9 @@ public class MapMethodsTest {
         // merge() 方法
         Map<String, Integer> studentScoreMap2 = new HashMap<>();
         studentScoreList.forEach(studentScore -> studentScoreMap2.merge(
-          studentScore.getStuName(),
-          studentScore.getScore(),
-          Integer::sum));
+                studentScore.getStuName(),
+                studentScore.getScore(),
+                Integer::sum));
         // {"李四":228,"张三":215,"王五":235}
         System.out.println(objectMapper.writeValueAsString(studentScoreMap2));
     }
@@ -51,6 +48,32 @@ public class MapMethodsTest {
         }};
         // 2
         System.out.println(map.compute(k, (key, oldVal) -> oldVal + 1));
+    }
+
+    @Test
+    public void mapCountComputeTest() {
+        List<String> words = new ArrayList<String>() {{
+            add("A");
+            add("B");
+            add("C");
+            add("A");
+            add("C");
+            add("E");
+            add("E");
+            add("E");
+            add("E");
+            add("A");
+            add("E");
+        }};
+        // the word appear times
+        Map<String, Integer> wordCountMap = new HashMap<>();
+        words.forEach(word -> wordCountMap.compute(word, (key, oldCount) -> {
+            if (Objects.isNull(oldCount)) {
+                return 1;
+            }
+            return oldCount + 1;
+        }));
+        System.out.println(wordCountMap);
     }
 
     private List<StudentScore> buildATestList() {
